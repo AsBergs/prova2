@@ -12,12 +12,26 @@
     */
 
     //Entrada
-
+let salarioMensal = parseInt(prompt("Quanto você ganha por mês?: "))
 
     //Processamento
-
-
+const valor2Porcento = (salarioMensal / 100) * 2
+const valor4Porcento = (salarioMensal / 100) * 4
+const valor6Porcento = (salarioMensal / 100) * 6
+const valor7Porcento = (salarioMensal / 100) * 7
     //Saída
-
+if(salarioMensal <= 2000){
+    const salarioMenos2 = salarioMensal - valor2Porcento
+    document.write(`O seu salário final é de: ${salarioMenos2.toFixed(2)}R$ <br> a sua porcentagem de desconto foi: 2% <br> e o valor descontado foi: ${valor2Porcento.toFixed(2)}R$`)
+}else if(salarioMensal <= 4000){
+    const salarioMenos4 = salarioMensal - valor4Porcento
+    document.write(`O seu salário final é de: ${salarioMenos4.toFixed(2)}R$ <br> a sua porcentagem de desconto foi: 4% <br> e o valor descontado foi: ${valor4Porcento.toFixed(2)}R$`)
+}else if(salarioMensal <= 6000){
+    const salarioMenos6 = salarioMensal - valor6Porcento
+    document.write(`O seu salário final é de: ${salarioMenos6.toFixed(2)}R$ <br> a sua porcentagem de desconto foi: 6% <br> e o valor descontado foi: ${valor6Porcento.toFixed(2)}R$`)
+}else{
+    const salarioMenos7 = salarioMensal - valor7Porcento
+    document.write(`O seu salário final é de: ${salarioMenos7.toFixed(2)}R$ <br> a sua porcentagem de desconto foi: 7% <br> e o valor descontado foi: ${valor7Porcento.toFixed(2)}R$`)
+}
     
 </script>

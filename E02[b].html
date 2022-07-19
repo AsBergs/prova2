@@ -12,12 +12,20 @@
     */
 
     //Entrada
+const contaAgua = parseInt(prompt("Qual foi o valor da conta da agua?: "))
+const contaEnergia = parseInt(prompt("Qual foi o valor da conta de luz?: "))
+const contaTelefone = parseInt(prompt("Qual o valor da conta do telefone?: "))
+const contaSupermecado = parseInt(prompt("Qual foi o valor do supermercado?: "))
+const salario = parseInt(prompt("Quanto é o seu salário?: "))
 
-
-    //Processamento
-
-
+//Processamento
+const contasTotal = contaAgua + contaEnergia + contaTelefone + contaSupermecado
+const sobrouSalario = salario - contasTotal
     //Saída
-
+if(sobrouSalario > 0){
+    document.write(`Sobrou ${sobrouSalario.toFixed(2)}R$ esse mês`)
+}else{
+    document.write(`Faltou ${sobrouSalario.toFixed(2)}R$ esse mês`)
+}
     
 </script>

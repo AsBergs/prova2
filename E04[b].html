@@ -13,12 +13,21 @@
     */
 
     //Entrada
-
-
+const linhasQtd = Number(prompt("Quantas linhas pretende usar?: "))
+const ifelsesQtd = Number(prompt("Quantos if e else?: "))
     //Processamento
-
+const qtdPontos = linhasQtd + (ifelsesQtd * 5)
 
     //Saída
+if(linhasQtd <= 30){
+    document.write(` "Aprendiz" <br> Você fez: ${qtdPontos} pontos`)
+}else if(linhasQtd <= 50){
+    document.write(`"Em evolução" <br> Você fez: ${qtdPontos} pontos`)
+}else if(linhasQtd <= 70){
+    document.write(`"Estagiário" <br> Você fez: ${qtdPontos} pontos`)
+}else{
+    document.write(`"Júnior" <br> Você fez: ${qtdPontos} pontos`)
+}
 
     
 </script>

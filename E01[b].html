@@ -8,9 +8,17 @@
     */
 
     //Entrada
-
-
-    //Processamento
+const preçoOnibus = Number(prompt("Qual o custo da viagem se feita por ônibus?: "))
+const preçoAviao = Number(prompt("Qual os preço se feita de avião?: "))
+const preçoCarro = Number(prompt("e o preço se feita por carro?: "))    
+//Processamento
+if(preçoOnibus < preçoAviao && preçoCarro){
+    document.write(` O meio de transporte mais barato é o ônibus: ${preçoOnibus}R$`)
+}else if(preçoAviao < preçoCarro && preçoOnibus){
+    document.write(`O meio de transporte mais barato é o avião: ${preçoAviao}R$`)
+}else{
+    document.write(`O mwior de transporte mais barato é o carro: ${preçoCarro}R$`)
+}
 
 
     //Saída
